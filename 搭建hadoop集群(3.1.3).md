@@ -6,13 +6,13 @@
 java -version
 ```
 
-![1](Hadoop3.1.3-img\1.png)
+![1](Hadoop3.1.3-img/1.png)
 
 ### 二、上传hadoop3.1.3安装包
 
-- [ ] 把安装包上传到   /Hadoop/export/software 文件夹![5](Hadoop3.1.3-img\5.png)
+- [ ] 把安装包上传到   /Hadoop/export/software 文件夹![5](Hadoop3.1.3-img/5.png)
 
-![6](Hadoop3.1.3-img\6.png)
+![6](Hadoop3.1.3-img/6.png)
 
 
 
@@ -24,7 +24,7 @@ java -version
   cd   /Hadoop/export/software
   ```
 
-![3](Hadoop3.1.3-img\3.png)
+![3](Hadoop3.1.3-img/3.png)
 
 - [ ] 执行把安装包解压到  /Hadoop/export/server/ 文件夹
 
@@ -42,11 +42,11 @@ java -version
   cd  /Hadoop/export/server/ 
   ```
 
-  ![7](Hadoop3.1.3-img\7.png)
+  ![7](Hadoop3.1.3-img/7.png)
 
-![4](Hadoop3.1.3-img\4.png)
+![4](Hadoop3.1.3-img/4.png)
 
-![8](Hadoop3.1.3-img\8.png)
+![8](Hadoop3.1.3-img/8.png)
 
 所有的配置文件目录：/Hadoop/export/server/hadoop-3.1.3/etc
 
@@ -68,7 +68,7 @@ java -version
   cd /Hadoop/export/server/hadoop-3.1.3/etc/hadoop/
   ```
 
-  ![9](Hadoop3.1.3-img\9.png)
+  ![9](Hadoop3.1.3-img/9.png)
 
 - [ ] 用vim打开：hadoop-env.sh文件
 
@@ -89,7 +89,7 @@ java -version
   export YARN_NODEMANAGER_USER=root
   ```
 
-![10](Hadoop3.1.3-img\10.png)
+![10](Hadoop3.1.3-img/10.png)
 
 - [ ] 按esc 退出编辑模式     按:wq保存
 
@@ -99,7 +99,7 @@ java -version
   which java
   ```
 
-  ![11](Hadoop3.1.3-img\11.png)
+  ![11](Hadoop3.1.3-img/11.png)
   
   
 
@@ -115,7 +115,7 @@ java -version
   cd /Hadoop/export/server/hadoop-3.1.3/etc/hadoop/
   ```
 
-  ![12](Hadoop3.1.3-img\12.png)
+  ![12](Hadoop3.1.3-img/12.png)
 
 - [ ] 使用vim  打开core-site.xml
 
@@ -163,7 +163,7 @@ java -version
 </configuration>
 ```
 
-![13](Hadoop3.1.3-img\13.png)
+![13](Hadoop3.1.3-img/13.png)
 
 - [ ] 按esc 退出编辑模式   保存退出
 
@@ -204,7 +204,7 @@ vim hdfs-site.xml
   
   ```
 
-  ![14](Hadoop3.1.3-img\14.png)
+  ![14](Hadoop3.1.3-img/14.png)
 
 - [ ] 按esc退出编辑模式    保存文件
 
@@ -261,7 +261,7 @@ vim hdfs-site.xml
   
   ```
 
-  ![15](Hadoop3.1.3-img\15.png)
+  ![15](Hadoop3.1.3-img/15.png)
 
 - [ ] 按esc退出编辑模式     保存文件
 
@@ -355,7 +355,7 @@ vim hdfs-site.xml
   
   ```
 
-  ![16](Hadoop3.1.3-img\16.png)
+  ![16](Hadoop3.1.3-img/16.png)
 
 - [ ] 按esc  退出编辑模式    保存文件
 
@@ -389,7 +389,7 @@ vim hdfs-site.xml
   www.Hadoopvm3.com
   ```
 
-![17](Hadoop3.1.3-img\17.png)
+![17](Hadoop3.1.3-img/17.png)
 
 - [ ] 4、按esc  退出编辑模式   保存文件
 
@@ -407,7 +407,7 @@ vim hdfs-site.xml
 cd /Hadoop/export/server
 ```
 
-![18](Hadoop3.1.3-img\18.png)
+![18](Hadoop3.1.3-img/18.png)
 
 #### 2、把配置好的hadoop文件分发同步到另外两台机器
 
@@ -418,13 +418,13 @@ scp -r hadoop-3.1.3 root@Hadoopvm2:/Hadoop/export/server
 scp -r hadoop-3.1.3 root@Hadoopvm3:/Hadoop/export/server
 ```
 
-![19](Hadoop3.1.3-img\19.png)
+![19](Hadoop3.1.3-img/19.png)
 
 ```
 scp -r hadoop-3.1.3 root@Hadoopvm3:/Hadoop/export/server
 ```
 
-![20](Hadoop3.1.3-img\20.png)
+![20](Hadoop3.1.3-img/20.png)
 
 
 
@@ -444,7 +444,7 @@ export HADOOP_HOME=/Hadoop/export/server/hadoop-3.1.3
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 ```
 
-![21](Hadoop3.1.3-img\21.png)
+![21](Hadoop3.1.3-img/21.png)
 
 3、按esc 退出编辑模式  保存文件
 
@@ -473,7 +473,7 @@ source /etc/profile
 hadoop
 ```
 
-![23](Hadoop3.1.3-img\23.png)
+![23](Hadoop3.1.3-img/23.png)
 
 
 
@@ -489,9 +489,9 @@ hadoop
 hdfs namenode -format
 ```
 
-![24](Hadoop3.1.3-img\24.png)
+![24](Hadoop3.1.3-img/24.png)
 
-![25](Hadoop3.1.3-img\25.png)
+![25](Hadoop3.1.3-img/25.png)
 
 ######  初始化只要执行成功后，后面千万千万不能在执行了)
 
@@ -515,9 +515,9 @@ stop-dfs.sh
 
 ###### 使用jps查看服务的启动情况
 
-![27](Hadoop3.1.3-img\27.png)
+![27](Hadoop3.1.3-img/27.png)
 
-![28](Hadoop3.1.3-img\28.png)
+![28](Hadoop3.1.3-img/28.png)
 
 ##### 3、  YARN集群 启动
 
@@ -531,13 +531,13 @@ start-yarn.sh
 stop-yarn.sh
 ```
 
-![29](Hadoop3.1.3-img\29.png)
+![29](Hadoop3.1.3-img/29.png)
 
-![30](Hadoop3.1.3-img\30.png)
+![30](Hadoop3.1.3-img/30.png)
 
 ### 十、hadoop集群规划图
 
-![31](Hadoop3.1.3-img\31.png)
+![31](Hadoop3.1.3-img/31.png)
 
 HDSF文件系统集群启动(Hadoopvm1执行)
 
